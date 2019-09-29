@@ -29,9 +29,9 @@ class Transaction {
     if (!this.isAllowed()) {
       return false;
     }
-     // Keep track of the time of the transaction
-     this.time = new Date();
-     // Add the transaction to the account
+    // Keep track of the time of the transaction
+    this.time = new Date();
+    // Add the transaction to the account
     this.account.addTransaction(this);
     return true;
   }
